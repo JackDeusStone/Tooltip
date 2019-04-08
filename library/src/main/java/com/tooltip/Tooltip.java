@@ -214,6 +214,7 @@ public final class Tooltip {
                 public void run() {
                     if (mAnchorView.isShown()) {
                         mPopupWindow.showAsDropDown(mAnchorView);
+                        mPopupWindow.setFocusable(true);
                     } else {
                         Log.e(TAG, "Tooltip cannot be shown, root view is invalid or has been closed");
                     }
